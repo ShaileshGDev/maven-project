@@ -44,5 +44,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+<sonar.host.url>http://sonarsgv2.centralindia.cloudapp.azure.com:9000/</sonar.host.url>
+<sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
+<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+<sonar.jacoco.reportPaths>target/coverage-reports/jacoco-ut.exec, target/coverage-reports/jacoco-it.exec</sonar.jacoco.reportPaths>
+<sonar.exclusions>file:**/generated-sources/**,file:**/pom.xml,file:**/node_modules/**</sonar.exclusions>
 </project>
